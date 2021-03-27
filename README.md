@@ -16,6 +16,12 @@ Ridhima Inukurti:
  - Github Commit towards Minilab
 
 Sriya Chilla 
+ - In progress [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812426)
+ - Backlog [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812456)
+ - Github Commit Towards In progress Ticket
+   - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/cf377158c080f23e919a4259d6d39c09d083c4d6)
+   - [Commit #2](https://github.com/ridhimainukurti/group-2/commit/6dd18d1c642a6c53a78b71bd545d226af678c584)
+ - Github Commit towards Minilab
 
 Isai Rajaraman: 
 
