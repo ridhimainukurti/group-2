@@ -25,6 +25,7 @@ Sriya Chilla
    - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/cf377158c080f23e919a4259d6d39c09d083c4d6)
    - [Commit #2](https://github.com/ridhimainukurti/group-2/commit/6dd18d1c642a6c53a78b71bd545d226af678c584)
  - Github Commit towards Minilab
+   - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/2b99ea55ddea8ca1f44f48523ef9da31d79f938a)
 
 Isai Rajaraman: 
 
