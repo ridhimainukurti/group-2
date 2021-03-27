@@ -3,7 +3,7 @@ from flask import Blueprint
 ridhima_bp = flask.Blueprint('trending', __name__,
                               template_folder='templates',
                               static_folder='static')
-
+#make sure to add your blueprints underneath mine
 
 
 @ridhima_bp.route('/')
