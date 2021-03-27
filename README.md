@@ -6,6 +6,7 @@ For the WASC committe's evaluation of our school, we are creating a website that
 
 ## [Project Plan](https://docs.google.com/presentation/d/1rOeBUSWEfO3Z_pq9emZUawKFRtPyqgKsz_CeKIXD_Cs/edit?usp=sharing)
 ## [Scrum Board](https://github.com/ridhimainukurti/group-2/projects/1)
+## [Project Idea to Support Individual Members](https://docs.google.com/presentation/d/1rOeBUSWEfO3Z_pq9emZUawKFRtPyqgKsz_CeKIXD_Cs/edit#slide=id.gc7bcb5c930_0_3)
 
 ## Sprint 1 Individual Work (3/22 - 3/26)
 
