@@ -1,10 +1,10 @@
 import flask
 
-addevent_bp = flask.Blueprint('trending', __name__,
+addevent_bp = flask.Blueprint('addevent', __name__,
                               template_folder='templates',
                               static_folder='static')
 
-calendar_bp = flask.Blueprint('trending', __name__,
+calendar_bp = flask.Blueprint('calendar', __name__,
                               template_folder='templates',
                               static_folder='static')
 
