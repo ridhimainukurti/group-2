@@ -1,12 +1,12 @@
 import flask
 from flask import Blueprint
 
-ridhima_bp = flask.Blueprint('trending', __name__,
+ridhima_bp = flask.Blueprint('ridhima', __name__,
                               template_folder='templates',
                               static_folder='static')
 #make sure to add your blueprints underneath mine
 
-sriya_bp = flask.Blueprint('trending', __name__,
+sriya_bp = flask.Blueprint('sriya', __name__,
                            template_folder='templates',
                            static_folder='static')
 
