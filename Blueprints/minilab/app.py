@@ -10,6 +10,10 @@ sriya_bp = flask.Blueprint('sriya', __name__,
                            template_folder='templates',
                            static_folder='static')
 
+isai_bp = flask.Blueprint('isai', __name__,
+                              template_folder='templates',
+                              static_folder='static')
+
 
 @ridhima_bp.route('/')
 def ridhima():
@@ -18,4 +22,8 @@ def ridhima():
 @sriya_bp.route('/')
 def sriya():
     return "Sriya's MiniLab"
+
+@isai_bp.route('/')
+def sriya():
+    return "Isai's MiniLab"
 
