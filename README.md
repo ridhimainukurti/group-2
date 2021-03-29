@@ -29,6 +29,7 @@ Sriya Chilla
    - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/969676d6fc14fd9986a404101ce35a9e3e03fbfe)
 
 Isai Rajaraman: 
+- In progress [Ticket] (https://github.com/ridhimainukurti/group-2/projects/1#card-57812467)
 
 Iniyaa Mohanraj: 
 
