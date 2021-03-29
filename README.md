@@ -31,7 +31,7 @@ Sriya Chilla
 Isai Rajaraman: 
 - In progress [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812467)
 - Backlog [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812449) 
-- Github Commit Towards In Progress Ticker
+- Github Commit Towards In Progress Ticket
   - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/b49c2bf095bcc495e7f7ebbb8b935996059723cf)
 - Github Commit Towards [Minilab](https://github.com/ridhimainukurti/group-2/tree/main/Blueprints)
   - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/c98e1e07bb7100ef3b04dc49f9f8b207f66613c0)  
@@ -39,7 +39,11 @@ Isai Rajaraman:
 Iniyaa Mohanraj: 
 - In progress [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812467)
 - Backlog [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812449) 
-- Github Commit Towards In Progress Ticker
-  - 
+- Github Commit Towards In Progress Ticket
 
 Grace Le: 
+- In progress [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812467)
+- - Backlog [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812443)
+- Github Commit Towards In Progress Ticket
+- Github Commit Towards [Minilab](https://github.com/ridhimainukurti/group-2/tree/main/Blueprints)
+ - [Commit #1](https://github.com/ridhimainukurti/group-2/blob/10bb5b4872ebdf9314bee190666c6c730ee18bf5/Blueprints/minilab/app.py#L17-)
