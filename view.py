@@ -9,6 +9,7 @@ app.register_blueprint(addevent_bp, url_prefix='/addevent')
 app.register_blueprint(calendar_bp, url_prefix='/calendar')
 app.register_blueprint(ridhima_bp, url_prefix='/ridhima')
 app.register_blueprint(sriya_bp, url_prefix='/sriya')
+app.register_blueprint(sriya_bp, url_prefix='/isai')
 
 
 #connects default URL of server to a python function
