@@ -37,5 +37,9 @@ Isai Rajaraman:
   - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/c98e1e07bb7100ef3b04dc49f9f8b207f66613c0)  
 
 Iniyaa Mohanraj: 
+- In progress [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812467)
+- Backlog [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812449) 
+- Github Commit Towards In Progress Ticker
+  - 
 
 Grace Le: 
