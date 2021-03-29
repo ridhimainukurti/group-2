@@ -33,6 +33,6 @@ def sriya():
     return "Isai's MiniLab"
 
 @grace_bp.route('/')
-def sriya():
+def grace():
     return "Grace's MiniLab"
 
