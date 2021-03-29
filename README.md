@@ -40,6 +40,7 @@ Iniyaa Mohanraj:
 - In progress [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812467)
 - Backlog [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812449) 
 - Github Commit Towards In Progress Ticket
+  - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/cd3045845511b5a5c0433f50d12a0172e6572272)
 
 Grace Le: 
 - In progress [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812467)
