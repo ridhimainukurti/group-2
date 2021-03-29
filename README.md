@@ -23,16 +23,18 @@ Sriya Chilla
  - In progress [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812426)
  - Backlog [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812456)
  - Github Commit Towards In progress Ticket
-   - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/cf377158c080f23e919a4259d6d39c09d083c4d6) - image added
-   - [Commit #2](https://github.com/ridhimainukurti/group-2/commit/6dd18d1c642a6c53a78b71bd545d226af678c584) - 1st link added (main dnhs website)
+   - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/cf377158c080f23e919a4259d6d39c09d083c4d6)
+   - [Commit #2](https://github.com/ridhimainukurti/group-2/commit/6dd18d1c642a6c53a78b71bd545d226af678c584)
  - Github Commit towards [Minilab](https://github.com/ridhimainukurti/group-2/tree/main/Blueprints)
    - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/969676d6fc14fd9986a404101ce35a9e3e03fbfe)
 
 Isai Rajaraman: 
 - In progress [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812467)
-- Backlog 
-- 
-- 
+- Backlog [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812449) 
+- Github Commit Towards In Progress Ticker
+  - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/b49c2bf095bcc495e7f7ebbb8b935996059723cf)
+- Github Commit Towards [Minilab](https://github.com/ridhimainukurti/group-2/tree/main/Blueprints)
+  - [Commit #1](https://github.com/ridhimainukurti/group-2/commit/c98e1e07bb7100ef3b04dc49f9f8b207f66613c0)  
 
 Iniyaa Mohanraj: 
 
