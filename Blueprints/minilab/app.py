@@ -29,7 +29,7 @@ def sriya():
     return "Sriya's MiniLab"
 
 @isai_bp.route('/')
-def sriya():
+def isai():
     return "Isai's MiniLab"
 
 @grace_bp.route('/')
