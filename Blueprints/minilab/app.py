@@ -18,6 +18,10 @@ grace_bp = flask.Blueprint('grace', __name__,
                           template_folder='templates',
                           static_folder='static')
 
+iniyaa_bp = flask.Blueprint('iniyaa', __name__,
+                          template_folder='templates',
+                          static_folder='static')
+
 
 
 @ridhima_bp.route('/')
@@ -36,4 +40,7 @@ def isai():
 def grace():
     return "Grace's MiniLab"
 
+@iniyaa_bp.route('/')
+def iniyaa():
+    return "Iniyaa's MiniLab"
 
