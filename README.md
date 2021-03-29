@@ -42,3 +42,5 @@ Iniyaa Mohanraj:
 - Github Commit Towards In Progress Ticket
 
 Grace Le: 
+- In progress [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812467)
+- Github Commit Towards In Progress Ticket
