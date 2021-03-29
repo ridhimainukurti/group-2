@@ -43,5 +43,7 @@ Iniyaa Mohanraj:
 
 Grace Le: 
 - In progress [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812467)
+- - Backlog [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812443)
 - Github Commit Towards In Progress Ticket
-- Backlog [Ticket](https://github.com/ridhimainukurti/group-2/projects/1#card-57812443)
+- Github Commit Towards [Minilab](https://github.com/ridhimainukurti/group-2/tree/main/Blueprints)
+ - [Commit #1](https://github.com/ridhimainukurti/group-2/blob/10bb5b4872ebdf9314bee190666c6c730ee18bf5/Blueprints/minilab/app.py#L17-)
