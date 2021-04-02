@@ -7,9 +7,9 @@ class Exponential:
         self._list = []
         self._dict = {}
         self._dictID = 0
-        self.calc_series()
+        self.exponential_series()
 
-    def calc_series(self):
+    def exponential_series(self):
         limit = self._series
         f = [1]
         while limit > 0:
