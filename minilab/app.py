@@ -23,5 +23,18 @@ def isai():
         return render_template("/minilab/isai.html", factorial = Factorial (int(request.form.get("series"))))
     return render_template("/minilab/isai.html", factorial= Factorial(2))
 
-
-
+@minilab_bp.route('/grace' , methods=['GET', 'POST'])
+def grace():
+    mean = 0
+    mode = 0
+    median = 0
+    list = ""
+    if request.method == 'POST':
+        values = request.form['list']
+        m = math()
+        m.addValues(values)
+        mean = m.getAverage()
+        median = m.getMedian()
+        mode = m.getMode()
+        list = m.getList()
+    return render_template("/minilab/grace-minilab.html", mean=mean, median=median, mode=mode, list=list)
