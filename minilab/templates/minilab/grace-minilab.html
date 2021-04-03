@@ -11,33 +11,32 @@
 <body>
 <div class="container">
     <div class="pt-5 text-white">
-        <header class="py-5 mt-5">
+        <header>
             <h1 class="display-4">Grace's Minilab</h1>
-            <p style="font-size:15px" > Insert a list of numbers by using a comma to find your median, mean, and mode</p>
+            <p style="font-size:15px" > Type a list of numbers by using a comma to find your median, mean, and mode</p>
         </header>
     </div>
     <form method="POST" ID="myForm" action=# class="form1">
         <p>
             <label for="list" class="pt-5 text-white">List:</label>
-            <input id="list" name="list" placeholder="" type="text" required="required">
+            <input id="list" name="list" placeholder="ex: 1,2,3,4 etc." type="text" required="required">
+            <button>Go!</button>
         </p>
-        <p>
-            <button class="button"><span>Compute!</span></button>
-        </p>
+
     </form>
     <br>
     <br>
     <table class="container">
         <thead>
         <tr style="word-break:break-all">
-            <th width="200px"><h1>List</h1></th>
+            <th width="150px"><h1>List</h1></th>
             <th width="100px"><h1>Median</h1></th>
             <th width="100px"><h1>Mean</h1></th>
             <th width="100px"><h1>Mode</h1></th>
         </tr>
         </thead>
         <tbody>
-        <tr style="word-break:break-all;">
+        <tr style="word-break:break-all; color: white">
             <td>{{list}}</td>
             <td>{{mean}}</td>
             <td>{{median}}</td>
@@ -50,43 +49,6 @@
 </body>
 </html>
 <style>
-.button {
-  border-radius: 4px;
-  background-color: #cf8ce6;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 15px;
-  padding: 20px;
-  width: 125px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
@@ -117,9 +79,9 @@ h2 a {
 .container td {
 	  font-weight: normal;
 	  font-size: 1em;
-  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
-	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
-	        box-shadow: 0 2px 2px -2px #0E1119;
+  -webkit-box-shadow: 0 2px 2px -2px #384c78;
+	   -moz-box-shadow: 0 2px 2px -2px #384c78;
+	        box-shadow: 0 2px 2px -2px #384c78;
 }
 
 .container {
@@ -143,7 +105,7 @@ h2 a {
 }
 
 .container th {
-	  background-color: #1F2739;
+	  background-color: #000000;
 }
 
 .container td:first-child { color: #ffffff; }
@@ -156,11 +118,11 @@ h2 a {
 }
 
 .container td:hover {
-  background-color: #cd8ce6;
+  background-color: #384c78;
   color: #ffffff;
   font-weight: bold;
 
-  box-shadow: #cf8ce6 -1px 1px, #cf8ce6 -2px 2px, #cf8ce6 -3px 3px, #cf8ce6 -4px 4px, #cf8ce6 -5px 5px, #cf8ce6 -6px 6px;
+  box-shadow: #384c78 -1px 1px, #384c78 -2px 2px, #384c78 -3px 3px, #384c78 -4px 4px, #384c78 -5px 5px, #384c78 -6px 6px;
   transform: translate3d(6px, -6px, 0);
 
   transition-delay: 0s;

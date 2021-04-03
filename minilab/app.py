@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request
 from minilab.ridhima import Exponential
 from minilab.isai import Factorial
+from minilab.grace import numlist
 
 
 minilab_bp = Blueprint('minilab',  __name__,
@@ -31,10 +32,10 @@ def grace():
     list = ""
     if request.method == 'POST':
         values = request.form['list']
-        m = math()
-        m.addValues(values)
-        mean = m.getAverage()
-        median = m.getMedian()
-        mode = m.getMode()
-        list = m.getList()
+        n = numlist()
+        n.values2(values)
+        mean = n.average()
+        median = n.median()
+        mode = n.mode()
+        list = n.list()
     return render_template("/minilab/grace-minilab.html", mean=mean, median=median, mode=mode, list=list)
