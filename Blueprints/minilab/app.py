@@ -43,6 +43,7 @@ def factorial():
 
 @grace_bp.route('/')
 def grace():
+    return render_template("grace.html")
     return "Grace's MiniLab"
 
 @iniyaa_bp.route('/')
