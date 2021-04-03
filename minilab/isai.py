@@ -65,8 +65,8 @@ if __name__ == "__main__":
 
     '''Using method to get data from object'''
 
-for i in range(n):
-    print(f"Fibonacci sequence {i} = {factorial.get_sequence(i)}")
+    for i in range(n):
+        print(f"Fibonacci sequence {i} = {factorial.get_sequence(i)}")
 
 
 
