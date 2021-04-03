@@ -1,5 +1,6 @@
 import flask
 
+
 addevent_bp = flask.Blueprint('addevent', __name__,
                               template_folder='templates',
                               static_folder='static')

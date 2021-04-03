@@ -1,5 +1,8 @@
 import flask
-from flask import Blueprint
+from flask import Flask, Blueprint, render_template
+from Blueprints.minilab.isai_bp import Factorial
+
+
 
 ridhima_bp = flask.Blueprint('ridhima', __name__,
                               template_folder='templates',
@@ -32,9 +35,12 @@ def ridhima():
 def sriya():
     return "Sriya's MiniLab"
 
-@isai_bp.route('/')
-def isai():
-    return "Isai's MiniLab"
+@isai_bp.route('/factorial', methods= ["GET", "POST"])
+def factorial():
+    if request.form:
+        return render_template("isai.html", factorial=Factorial(int(request.form.get("series"))))
+    return render_template("/template/isai.html", factorial=Factorial(2))
+
 
 @grace_bp.route('/')
 def grace():
