@@ -3,6 +3,10 @@ from flask import Flask, Blueprint, render_template
 
 
 
+minilab_bp = Blueprint('minilab Menu',  __name__,
+                       template_folder='templates',
+                       static_folder='static')
+"""
 ridhima_bp = flask.Blueprint('ridhima', __name__,
                               template_folder='templates',
                               static_folder='static')
@@ -23,9 +27,17 @@ grace_bp = flask.Blueprint('blueprint.grace_bp', __name__,
 iniyaa_bp = flask.Blueprint('iniyaa', __name__,
                           template_folder='templates',
                           static_folder='static')
+"""
+@minilab_bp.route('/')
+def minilab():
+    return "P4-Walruses Minilabs"
+
+@minilab_bp.route('/ridhima')
+def ridhima_minilab():
+    return render_template("/templates/ridhima.html")
 
 
-
+"""
 @ridhima_bp.route('/')
 def ridhima():
     return "Ridhima's MiniLab"
@@ -49,4 +61,4 @@ def grace():
 @iniyaa_bp.route('/')
 def iniyaa():
     return "Iniyaa's MiniLab"
-
+"""
