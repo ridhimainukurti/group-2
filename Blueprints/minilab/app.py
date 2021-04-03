@@ -54,6 +54,10 @@ def factorial():
         return render_template("isai.html", factorial=Factorial(int(request.form.get("series"))))
     return render_template("/template/isai.html", factorial=Factorial(2))
 
+@minilab_bp.route('/sriya')
+def sriya_minilab():
+    return render_template("/Blueprints/minilabs/sriya_factorial_templates/sriya_bp.html")
+
 
 @grace_bp.route('/')
 def grace():

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sriya's Factorial Series</title>
+</head>
+<body>
+    <form id="fibForm" action="/templates/sriya_bp" method="POST" >
+        <label for="value">Enter a number:</label>
+        <input name="value" id="value" type="number" min="0">
+        <button>Go!</button>
+    </form>
+
+    <div class="factorial_display">
+        <h3>Factorial value for {{factorial.number}}</h3>
+        <!-- Number, List table -->
+        <table class="mx-auto">
+            <tr>
+                <th scope="col">Number</th>
+            </tr>
+            <tr>
+                <td>{{factorial.number}}</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</body>
+</html>
