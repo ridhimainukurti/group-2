@@ -30,11 +30,11 @@ iniyaa_bp = flask.Blueprint('iniyaa', __name__,
 """
 @minilab_bp.route('/')
 def minilab():
-    return render_template("/templates/minilab.html")
+    return "P4-Walruses Minilabs"
 
 @minilab_bp.route('/ridhima')
 def ridhima_minilab():
-    return render_template("/templates/ridhima.html")
+    return render_template("/minilabs/ridhima.html")
 
 
 """
