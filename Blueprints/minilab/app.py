@@ -1,24 +1,24 @@
 import flask
-from flask import Blueprint, render_template
+from flask import Blueprint
 
-ridhima_bp = Blueprint('ridhima', __name__,
+ridhima_bp = flask.Blueprint('ridhima', __name__,
                               template_folder='templates',
                               static_folder='static')
 #make sure to add your blueprints underneath mine
 
-sriya_bp = Blueprint('sriya', __name__,
+sriya_bp = flask.Blueprint('sriya', __name__,
                            template_folder='templates',
                            static_folder='static')
 
-isai_bp = Blueprint('isai', __name__,
+isai_bp = flask.Blueprint('isai', __name__,
                               template_folder='templates',
                               static_folder='static')
 
-grace_bp = Blueprint('grace_bp', __name__,
+grace_bp = flask.Blueprint('grace', __name__,
                           template_folder='templates',
                           static_folder='static')
 
-iniyaa_bp = Blueprint('iniyaa', __name__,
+iniyaa_bp = flask.Blueprint('iniyaa', __name__,
                           template_folder='templates',
                           static_folder='static')
 
@@ -36,10 +36,9 @@ def sriya():
 def isai():
     return "Isai's MiniLab"
 
-@grace_bp.route('/minilabs')
 @grace_bp.route('/')
 def grace():
-    return render_template("grace-minilab.html")
+    return "Grace's MiniLab"
 
 @iniyaa_bp.route('/')
 def iniyaa():
