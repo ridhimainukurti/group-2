@@ -47,3 +47,4 @@ if __name__ == "__main__":
 
     for i in range(n):
         print(f"Exponential sequence {i + 1} = {exponential.get_sequence(i)}")
+

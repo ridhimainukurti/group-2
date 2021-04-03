@@ -23,6 +23,7 @@ class math:
             self._lst.append(int(value))
 
 
+
     def mode(self):
         return statistics.mode(self._lst)
 

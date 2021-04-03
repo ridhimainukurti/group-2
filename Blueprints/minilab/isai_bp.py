@@ -69,3 +69,4 @@ for i in range(n):
     print(f"Fibonacci sequence {i} = {factorial.get_sequence(i)}")
 
 
+
