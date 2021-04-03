@@ -4,8 +4,6 @@ from Blueprints.minilab.app import minilab_bp
 
 #create a Flask instance
 app = Flask(__name__)
-app.register_blueprint(addevent_bp, url_prefix='/addevent')
-app.register_blueprint(calendar_bp, url_prefix='/calendar')
 app.register_blueprint(minilab_bp, url_prefix='/minilab')
 
 
