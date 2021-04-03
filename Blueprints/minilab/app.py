@@ -1,6 +1,5 @@
 import flask
 from flask import Flask, Blueprint, render_template
-from Blueprints.minilab.isai_bp import Factorial
 
 
 
