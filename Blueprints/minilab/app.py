@@ -16,7 +16,7 @@ isai_bp = flask.Blueprint('isai', __name__,
                               template_folder='templates',
                               static_folder='static')
 
-grace_bp = flask.Blueprint('grace', __name__,
+grace_bp = flask.Blueprint('blueprint.grace_bp', __name__,
                           template_folder='templates',
                           static_folder='static')
 
