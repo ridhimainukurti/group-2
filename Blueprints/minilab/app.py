@@ -1,6 +1,6 @@
 import flask
 from flask import Flask, Blueprint, render_template
-from Blueprints.minilab.isai_bp import Factorial
+
 
 
 
@@ -39,7 +39,7 @@ def sriya():
 def factorial():
     if request.form:
         return render_template("isai.html", factorial=Factorial(int(request.form.get("series"))))
-    return render_template("/template/isai.html", factorial=Factorial(2))
+    return render_template("/templates/isai.html", factorial=Factorial(2))
 
 
 @grace_bp.route('/')
