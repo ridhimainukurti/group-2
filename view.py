@@ -1,17 +1,12 @@
 # https://flask.palletsprojects.com/en/1.1.x/api/
 from flask import Flask, render_template
-from Blueprints.events.app import addevent_bp, calendar_bp
-from Blueprints.minilab.app import ridhima_bp, sriya_bp, isai_bp, iniyaa_bp, grace_bp
+from Blueprints.minilab.app import minilab_bp
 
 #create a Flask instance
 app = Flask(__name__)
 app.register_blueprint(addevent_bp, url_prefix='/addevent')
 app.register_blueprint(calendar_bp, url_prefix='/calendar')
-app.register_blueprint(ridhima_bp, url_prefix='/ridhima')
-app.register_blueprint(sriya_bp, url_prefix='/sriya')
-app.register_blueprint(isai_bp, url_prefix='/isai')
-app.register_blueprint(grace_bp, url_prefix='/grace')
-app.register_blueprint(iniyaa_bp, url_prefix='/iniyaa')
+app.register_blueprint(minilab_bp, url_prefix='/minilab')
 
 
 
