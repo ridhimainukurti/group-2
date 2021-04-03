@@ -1,6 +1,6 @@
 # https://flask.palletsprojects.com/en/1.1.x/api/
 from flask import Flask, render_template
-from Blueprints.minilab.app import minilab_bp
+from minilab.app import minilab_bp
 
 #create a Flask instance
 app = Flask(__name__)
@@ -15,10 +15,10 @@ def home():
     #function use Flask import (Jinja) to render an HTML template
     return render_template("home.html")
 
-@app.route('/ridhima/')
-def ridhima():
+#@app.route('/ridhima/')
+#def ridhima():
     #function use Flask import (Jinja) to render an HTML template
-    return render_template("/minilab/ridhima.html")
+ #   return render_template("/minilab/ridhima.html")
 
 
 if __name__ == "__main__":
