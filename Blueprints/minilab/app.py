@@ -1,10 +1,10 @@
 import flask
-from flask import Flask, Blueprint, render_template
+from flask import Flask, Blueprint, render_template, request
+from Blueprints.minilab.ridhima_bp import Exponential
 
 
 
-
-minilab_bp = Blueprint('minilab Menu',  __name__,
+minilab_bp = Blueprint('minilab',  __name__,
                        template_folder='templates',
                        static_folder='static')
 """
@@ -33,10 +33,11 @@ iniyaa_bp = flask.Blueprint('iniyaa', __name__,
 def minilab():
     return "P4-Walruses Minilabs"
 
-@minilab_bp.route('/ridhima')
-def ridhima_minilab():
-    return render_template("/minilabs/ridhima.html")
-
+@minilab_bp.route('/ridhima', methods=["GET", "POST"])
+def ridhima_bp():
+    if request.form:
+        return render_template("minilab/ridhima.html", fibonacci = Exponential(int(request.form.get("series"))))
+    return render_template("minilab/ridhima.html", fibonacci= Exponential(2))
 
 """
 @ridhima_bp.route('/')
