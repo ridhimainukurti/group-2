@@ -15,6 +15,10 @@ def home():
     #function use Flask import (Jinja) to render an HTML template
     return render_template("home.html")
 
+@app.route('/ridhima/')
+def ridhima():
+    #function use Flask import (Jinja) to render an HTML template
+    return render_template("/minilab/ridhima.html")
 
 
 if __name__ == "__main__":
