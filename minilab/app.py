@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, request
 from minilab.ridhima import Exponential
 from minilab.isai import Factorial
 from minilab.grace import numlist
+from minilab.iniyaa import lucas
 
 
 minilab_bp = Blueprint('minilab',  __name__,
