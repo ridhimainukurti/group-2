@@ -53,8 +53,15 @@
 
 </div>
 </div>
+<style>
+    table, td, th {
+        border: 1px solid var(--dblue);
+    }
+    td, th {
+        text-align:left;
+    }
+</style>
 <script>
-
 var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");
 var totalSeconds = 0;
@@ -75,15 +82,6 @@ return valString;
 }
 }
 </script>
-</script>
-<style>
-    table, td, th {
-        border: 1px solid var(--dblue);
-    }
-    td, th {
-        text-align:left;
-    }
-</style>
 {% endblock %}
 
 
