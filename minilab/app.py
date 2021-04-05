@@ -19,6 +19,12 @@ def ridhima():
         return render_template("/minilab/ridhima.html", exponential = Exponential(int(request.form.get("series"))))
     return render_template("/minilab/ridhima.html", exponential= Exponential(2))
 
+@minilab_bp.route('/sriya', methods=["GET", "POST"])
+def sriya():
+    if request.form:
+        return render_template("/minilab/sriya_bp.html", exponential = Exponential(int(request.form.get("series"))))
+    return render_template("/minilab/sriya_bp.html", exponential= Exponential(2))
+
 @minilab_bp.route('/isai', methods=["GET", "POST"])
 def isai():
     if request.form:
