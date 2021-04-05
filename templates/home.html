@@ -20,8 +20,49 @@
         <area shape="rect" coords="550,75,650,200" alt="Sports" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Athletics/Athletics-Home" target="_blank">
     </map>
 
+    <a href="#" class="nav">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </a>
+
     <a href="/templates/sriya_bp.html">Sriya Minilab</a>
 
 </body>
 {% endblock %}
+<style>
+    .nav div{
+        height: 4px;
+        background-color: gray;
+        margin: 5px 0;
+        border-radius: 25px;
+        transition: 0.3s;
+    }
+
+    .nav{
+        width: 30px;
+        display: block;
+        margin: 1em 0 0 1em;
+    }
+
+    .one{
+        width: 30px;
+    }
+
+    .two {
+        width: 20px;
+    }
+
+    .three{
+        width: 25px;
+    }
+
+    .nav:hover div {
+        width: 30px;
+    }
+
+
+
+
+</style>
 </html>
