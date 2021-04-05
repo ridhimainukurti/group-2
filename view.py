@@ -4,7 +4,7 @@ from minilab.app import minilab_bp
 
 #create a Flask instance
 app = Flask(__name__)
-app.register_blueprint(minilab_bp, url_prefix='/minilab')
+app.register_blueprint(app, url_prefix='/Blueprints/minilab')
 
 
 
@@ -15,11 +15,15 @@ def home():
     #function use Flask import (Jinja) to render an HTML template
     return render_template("home.html")
 
-#@app.route('/ridhima/')
-#def ridhima():
+@app.route('/ridhima/')
+def ridhima():
     #function use Flask import (Jinja) to render an HTML template
- #   return render_template("/minilab/ridhima.html")
+    return render_template("/minilab/ridhima.html")
 
+@app.route('/sriya')
+def sriya():
+    #function use Flask import (Jinja) to render an HTML template
+    return render_template("/minilab/sriya.html")
 
 if __name__ == "__main__":
     #runs the application on the repl development server
