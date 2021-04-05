@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, request
 from minilab.ridhima import Exponential
 from minilab.isai import Factorial
 from minilab.grace import numlist
+from minilab.iniyaa import lucas
 
 
 minilab_bp = Blueprint('minilab',  __name__,
@@ -23,6 +24,12 @@ def isai():
     if request.form:
         return render_template("/minilab/isai.html", factorial = Factorial (int(request.form.get("series"))))
     return render_template("/minilab/isai.html", factorial= Factorial(2))
+ 
+@minilab_bp.route('/iniyaa', methods=["GET", "POST"])
+def iniyaa():
+    if request.form:
+        return render_template("/minilab/iniyaa.html", lucas = lucas (int(request.form.get("series"))))
+    return render_template("/minilab/iniyaa.html", lucas= lucas(2))
 
 @minilab_bp.route('/grace' , methods=['GET', 'POST'])
 def grace():
