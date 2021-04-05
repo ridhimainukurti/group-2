@@ -23,6 +23,12 @@ def isai():
     if request.form:
         return render_template("/minilab/isai.html", factorial = Factorial (int(request.form.get("series"))))
     return render_template("/minilab/isai.html", factorial= Factorial(2))
+ 
+@minilab_bp.route('/iniyaa', methods=["GET", "POST"])
+def iniyaa():
+    if request.form:
+        return render_template("/minilab/iniyaa.html", lucas = lucas (int(request.form.get("series"))))
+    return render_template("/minilab/iniyaa.html", lucas= lucas(2))
 
 @minilab_bp.route('/grace' , methods=['GET', 'POST'])
 def grace():
