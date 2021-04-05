@@ -43,7 +43,7 @@
             <!-- Series -->
             <h3>Lucas Series build up: {{lucas.series}} number: {{lucas.number}}</h3>
             <div class="overflow-auto" style="height: 200px">
-                {% for i in range(factorial.series) %}
+                {% for i in range(lucas.series) %}
                 <h5>{{lucas.get_sequence(i)}}</h5>
                 {% endfor %}
             </div>
