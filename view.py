@@ -1,8 +1,9 @@
 # https://flask.palletsprojects.com/en/1.1.x/api/
 from flask import Flask, render_template
 
-
 #create a Flask instance
+app = Flask(__name__)
+
 
 
 
