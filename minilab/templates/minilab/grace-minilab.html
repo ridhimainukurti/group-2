@@ -79,9 +79,7 @@ h2 a {
 .container td {
 	  font-weight: normal;
 	  font-size: 1em;
-  -webkit-box-shadow: 0 2px 2px -2px #384c78;
-	   -moz-box-shadow: 0 2px 2px -2px #384c78;
-	        box-shadow: 0 2px 2px -2px #384c78;
+
 }
 
 .container {
@@ -110,31 +108,7 @@ h2 a {
 
 .container td:first-child { color: #ffffff; }
 
-.container tr:hover {
-   background-color: #464A52;
--webkit-box-shadow: 0 6px 6px -6px #0E1119;
-	   -moz-box-shadow: 0 6px 6px -6px #0E1119;
-	        box-shadow: 0 6px 6px -6px #0E1119;
-}
 
-.container td:hover {
-  background-color: #384c78;
-  color: #ffffff;
-  font-weight: bold;
-
-  box-shadow: #384c78 -1px 1px, #384c78 -2px 2px, #384c78 -3px 3px, #384c78 -4px 4px, #384c78 -5px 5px, #384c78 -6px 6px;
-  transform: translate3d(6px, -6px, 0);
-
-  transition-delay: 0s;
-	  transition-duration: 0.4s;
-	  transition-property: all;
-  transition-timing-function: line;
-}
-
-@media (max-width: 800px) {
-.container td:nth-child(4),
-.container th:nth-child(4) { display: none; }
-}
 </style>
 
 {% endblock %}
