@@ -1,9 +1,11 @@
-from flask import Blueprint, render_template, request
+from flask import Flask, Blueprint, render_template, request
 from minilab.ridhima import Exponential
 from minilab.sriya import Factorial
 from minilab.isai import Factorial
 from minilab.grace import Addition
 from minilab.iniyaa import lucas
+
+app = Flask(__name__)
 
 
 minilab_bp = Blueprint('minilab',  __name__,

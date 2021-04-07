@@ -5,7 +5,8 @@ class Addition:
         if series < 0 or series > 10:
             raise ValueError("Series must be between 2 and 100")
         self._series = series
-        self._list = [1]
+        self._gracevar = 6
+        self._list = []
         self._dict = {}
         self._dictID = 0
 
@@ -14,18 +15,16 @@ class Addition:
 
     """Algorithm for building Fibonacci sequence, this id called from __init__"""
     def additionseries(self):
-        limit = self._series
-        print(limit)
-        addition = 1
+        # limit = self._series
+        limit = self._gracevar
+        f = [0, self._series]
         for i in range(0,limit + 1):
-            addition = addition+i
-            self.set_data(addition)
-
-
+            self.set_data(f[0])
+            f = [f[0] + self._series]
 
     """Method/Function to set Fibonacci data: list, dict, and dictID are instance variables of Class"""
     def set_data(self, num):
-        #self._list.append(num)
+        # self._list.append(num)
         self._dict[self._dictID] = self._list.copy()
         self._list.append(num)
         self._dictID += 1
@@ -50,15 +49,14 @@ class Addition:
 
 # Tester Code
 if __name__ == "__main__":
-
-    n = 2
+    n = self._gracevar + 2
 
     addition = Addition(n)
-
+    print("hello world.")
     print(f"Addition of {n} = {addition.number}")
     print(f"Addition series for {n} = {addition.list}")
 
 
 
-    for i in range(n):
+    for i in range(0 ,  10):
         print(f"Adding sequence {i} = {addition.get_sequence(i)}")
