@@ -1,4 +1,3 @@
-
 class Addition:
 
     def __init__(self, series):
@@ -32,7 +31,8 @@ class Addition:
     """Getters with decorator to allow . notation access"""
     @property
     def series(self):
-        return self._series
+        return self._gracevar
+       # return self._series + 3
 
     @property
     def list(self):
