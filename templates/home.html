@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
-<body style="background-color:#041e42">
 
-    <h1 style="color: white; font-style:'Becka Script' ">Welcome to the DNHS WASC Home Page!</h1>
+    <h1 style="color: white; font-style:'Becka Script'">Welcome to the DNHS WASC Home Page!</h1>
+
 
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Del_norte_wiki.png" alt="DNHS Map.jpg" width = "950px" usemap="#map"></a>
     <map name="map">
@@ -20,8 +20,140 @@
         <area shape="rect" coords="550,75,650,200" alt="Sports" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Athletics/Athletics-Home" target="_blank">
     </map>
 
-    <a href="/templates/sriya_bp.html">Sriya Minilab</a>
+    <a href="#" class="nav">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </a>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../reset-meyer.css">
+    <style type="text/css">
+body {
+	margin:10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif
+}
+
+#box1{
+	width:1000px;
+	height:120px;
+	margin:10px;
+	padding:10px;
+	position: relative; left: 15%; top: 50%;
+}
+
+#box2{
+	width:300px;
+	height:350px;
+	margin:10px;
+	padding:10px;
+}
+
+#box3{
+	width:300px;
+	height:350px;
+	margin:10px;
+	padding:10px;
+	position: relative; left: 25%; bottom: 100%;
+
+}
+
+#box1 {
+	background:#868786;
+	border-radius: 25px;
+	border: 4px solid black;
+}
+
+#box2 {
+	background:#868786;
+	border-radius: 25px;
+	border: 4px solid black;
+}
+
+#box3 {
+	background:#868786;
+	border-radius: 25px;
+	border: 4px solid black;
+}
+
+h2, p  {
+	padding:5px;
+}
+
+#box1 p, #box2 p, #box3 p {
+	white-space:pre;
+	font-size:smaller;
+	font-family:monospace;
+}
+.center {
+  margin: auto;
+  }
+</style>
+    <title>Rounded Corner Boxes</title>
+</head>
+<body>
+<div id="box1">
+    <h2 style="color:white" ><center>Inspiring passion and preparing all students to be college ready, future focused and globally aware</center>
+    </h2>
+</div>
+<head>
+    <style>
+    hr.new1 {
+      border: 1px solid white;
+      border-radius: 5px solid white;
+    }
+    </style>
+</head>
+<div>
+    <h2 style=" color: white">Admin</h2>
+    <hr class = "new1">
+</div>
+<div id="box2">
+    <h2>Example 2</h2>
+</div>
+<div id="box3">
+    <h2>Example3</h2>
+</div>
+</body>
+</html>
 
 </body>
 {% endblock %}
+<style>
+    .nav div{
+        height: 4px;
+        background-color: black;
+        margin: 5px 0;
+        border-radius: 25px;
+        transition: 0.3s;
+    }
+
+    .nav{
+        width: 30px;
+        display: block;
+        margin: 1em 0 0 1em;
+    }
+
+    .one{
+        width: 30px;
+    }
+
+    .two {
+        width: 20px;
+    }
+
+    .three{
+        width: 25px;
+    }
+
+    .nav:hover div {
+        width: 30px;
+    }
+
+    .nav:hover div {
+        width: 3
+
+
+</style>
 </html>

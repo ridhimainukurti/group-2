@@ -1,31 +1,62 @@
-import statistics
+class Addition:
 
-class numlist:
-    def __init__(self):
-        self._lst=[]
+    def __init__(self, series):
+        if series < 0 or series > 10:
+            raise ValueError("Series must be between 2 and 100")
+        self._series = series
+        self._gracevar = 6
+        self._list = []
+        self._dict = {}
+        self._dictID = 0
 
-    def average(self):
-        mean = sum(self._lst) / len(self._lst)
-        return round(mean, 2)
+        self.additionseries()
 
 
-    def value1(self, value):
-        self._lst.append(value)
+    """Algorithm for building Fibonacci sequence, this id called from __init__"""
+    def additionseries(self):
+        # limit = self._series
+        limit = self._gracevar
+        f = [0, self._series]
+        for i in range(0,limit + 1):
+            self.set_data(f[0])
+            f = [f[0] + self._series]
 
-    def values2(self, values):
-        for value in values.split(","):
-            self._lst.append(int(value))
+    """Method/Function to set Fibonacci data: list, dict, and dictID are instance variables of Class"""
+    def set_data(self, num):
+        # self._list.append(num)
+        self._dict[self._dictID] = self._list.copy()
+        self._list.append(num)
+        self._dictID += 1
 
-    def median(self):
-        self._lst.sort()
-        mid = len(self._lst) // 2
-        if mid == 0:
-            return 0
-        return (self._lst[mid] + self._lst[~mid]) / 2
+    """Getters with decorator to allow . notation access"""
+    @property
+    def series(self):
+        return self._gracevar
+       # return self._series + 3
 
-    def mode(self):
-        return statistics.mode(self._lst)
-
+    @property
     def list(self):
-        s = ','
-        return s.join(str(value) for value in self._lst)
+        return self._list
+
+    @property
+    def number(self):
+        return self._list[self._dictID - 1]
+
+    """Traditional Getter requires method access"""
+    def get_sequence(self, nth):
+        return self._dict[nth]
+
+
+# Tester Code
+if __name__ == "__main__":
+    n = self._gracevar + 2
+
+    addition = Addition(n)
+    print("hello world.")
+    print(f"Addition of {n} = {addition.number}")
+    print(f"Addition series for {n} = {addition.list}")
+
+
+
+    for i in range(0 ,  10):
+        print(f"Adding sequence {i} = {addition.get_sequence(i)}")
