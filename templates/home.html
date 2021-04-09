@@ -5,20 +5,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport", content="width=device-width, initial-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home</title>
+    <style>
+        .mapImage {
+            position: relative;
+            display: inline-block; /*Just for example, so this div is the same size as the image */
+        }
+
+        .pin {
+            position: absolute; /* Takes this element out the document flow */
+            z-index:10; /* Just in case of z-index issues, remove if not needed */
+        }
+
+            .main_dnhs_page {
+                left: 395px; /* Move pin1 50px left */
+                top: 310px; /* Move pin1 100px down */
+            }
+
+            .counseling {
+                left: 485px; /* Move pin2 350px left */
+                top: 285px; /* Move pin2 30px down */
+            }
+
+            .asb_room {
+                left: 480px; /* Move pin2 350px left */
+                top: 250px; /* Move pin2 30px down */
+            }
+
+            .pusd_website {
+                left: 645px; /* Move pin2 350px left */
+                top: 342px; /* Move pin2 30px down */
+            }
+
+            .sports {
+                left: 590px; /* Move pin2 350px left */
+                top: 120px; /* Move pin2 30px down */
+            }
+            
+    </style>
 </head>
 
     <h1 style="color: white; font-style:'Becka Script'">Welcome to the DNHS WASC Home Page!</h1>
 
-
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Del_norte_wiki.png" alt="DNHS Map.jpg" width = "950px" usemap="#map"></a>
-    <map name="map">
-        <area shape="rect" coords="390,300,425,350" alt="Main DNHS Website" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Home" target="_blank">
-        <area shape="rect" coords="480,290,550,325" alt="Counseling" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Counseling/Counseling-Home" target="_blank">
-        <area shape="rect" coords="475,235,515,285" alt="ASB Room" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Students/ASB/ASB" target="_blank">
-        <area shape="rect" coords="625,335,700,375" alt="PUSD Website" href="https://www.powayusd.com/" target="_blank">
-        <area shape="rect" coords="550,75,650,200" alt="Sports" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Athletics/Athletics-Home" target="_blank">
-    </map>
+    <div class="mapImage">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Del_norte_wiki.png" alt="DNHS Map.jpg" width = "950px" usemap="#map" class></a>
+        <a class="pin main_dnhs_page" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Home" target="_blank"><span class="fa fa-info-circle fa-2x"></span></a>
+        <a class="pin counseling" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Counseling/Counseling-Home" target="_blank"><span class="fa fa-info-circle fa-2x"></span></a>
+        <a class="pin asb_room" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Students/ASB/ASB" target="_blank"><span class="fa fa-info-circle fa-2x"></span></a>
+        <a class="pin pusd_website" href="https://www.powayusd.com/" target="_blank"><span class="fa fa-info-circle fa-2x"></span></a>
+        <a class="pin sports" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Athletics/Athletics-Home" target="_blank"><span class="fa fa-info-circle fa-2x"></span></a>
+    </div>
 
     <a href="#" class="nav">
         <div class="one"></div>
@@ -250,7 +290,7 @@ h2, p  {
     }
 
     .nav:hover div {
-        width: 3
+        width: 3px
 
 
 </style>
