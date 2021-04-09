@@ -5,20 +5,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport", content="width=device-width, initial-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <title>Home</title>
+    <style>
+        .mapImage {
+            position: relative;
+            display: inline-block; /*Just for example, so this div is the same size as the image */
+        }
+
+        .pin {
+            position: absolute; /* Takes this element out the document flow */
+            z-index:10; /* Just in case of z-index issues, remove if not needed */
+        }
+
+            .main_dnhs_page {
+                left: 396px; /* Move pin1 50px left */
+                top: 300px; /* Move pin1 100px down */
+            }
+
+            .counseling {
+                left: 485px; /* Move pin2 350px left */
+                top: 275px; /* Move pin2 30px down */
+            }
+
+            .asb_room {
+                left: 480px; /* Move pin2 350px left */
+                top: 240px; /* Move pin2 30px down */
+            }
+
+            .pusd_website {
+                left: 645px; /* Move pin2 350px left */
+                top: 327px; /* Move pin2 30px down */
+            }
+
+            .sports {
+                left: 590px; /* Move pin2 350px left */
+                top: 110px; /* Move pin2 30px down */
+            }
+            
+            
+    </style>
 </head>
 
-    <h1 style="color: white; font-style:'Becka Script'">Welcome to the DNHS WASC Home Page!</h1>
+    <h1 style="color: white; font-style:Arial">Welcome to the DNHS WASC Home Page!</h1>
 
-
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Del_norte_wiki.png" alt="DNHS Map.jpg" width = "950px" usemap="#map"></a>
-    <map name="map">
-        <area shape="rect" coords="390,300,425,350" alt="Main DNHS Website" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Home" target="_blank">
-        <area shape="rect" coords="480,290,550,325" alt="Counseling" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Counseling/Counseling-Home" target="_blank">
-        <area shape="rect" coords="475,235,515,285" alt="ASB Room" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Students/ASB/ASB" target="_blank">
-        <area shape="rect" coords="625,335,700,375" alt="PUSD Website" href="https://www.powayusd.com/" target="_blank">
-        <area shape="rect" coords="550,75,650,200" alt="Sports" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Athletics/Athletics-Home" target="_blank">
-    </map>
+    <div class="mapImage">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Del_norte_wiki.png" alt="DNHS Map.jpg" width = "950px" usemap="#map" class></a>
+        <a class="pin main_dnhs_page" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Home" target="_blank"><span class="fas fa-map-marker-alt fa-2x"></span></a>
+        <a class="pin counseling" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Counseling/Counseling-Home" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
+        <a class="pin asb_room" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Students/ASB/ASB" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
+        <a class="pin pusd_website" href="https://www.powayusd.com/" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
+        <a class="pin sports" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Athletics/Athletics-Home" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
+    </div>
 
     <a href="#" class="nav">
         <div class="one"></div>
@@ -35,6 +76,24 @@ body {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif
 }
 
+body {
+    background: linear-gradient(-45deg, #002654, #02704d, #063d1a, #182874);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 #box1{
 	width:1000px;
 	height:120px;
@@ -45,34 +104,116 @@ body {
 
 #box2{
 	width:300px;
-	height:350px;
+	height:450px;
 	margin:10px;
 	padding:10px;
+	position: relative; left: 2%;
 }
 
 #box3{
 	width:300px;
-	height:350px;
+	height:450px;
 	margin:10px;
 	padding:10px;
-	position: relative; left: 25%; bottom: 100%;
+	position: relative; left: 27%;
+	bottom: 460px
+
+}
+
+#box4{
+	width:300px;
+	height:450px;
+	margin:10px;
+	padding:10px;
+	position: relative; left: 52%;
+	bottom: 920px
+
+}
+
+#box5{
+	width:300px;
+	height:450px;
+	margin:10px;
+	padding:10px;
+	position: relative; left: 77%;
+	bottom: 1380px
+
+}
+
+#box6{
+	width:300px;
+	height:450px;
+	margin:10px;
+	padding:10px;
+	position: relative; left: 14%;
+	bottom: 1350px
+
+}
+
+#box7{
+	width:300px;
+	height:450px;
+	margin:10px;
+	padding:10px;
+	position: relative; left: 40%;
+	bottom: 1810px
+
+}
+
+#box8{
+	width:300px;
+	height:450px;
+	margin:10px;
+	padding:10px;
+	position: relative; left: 66%;
+	bottom: 2270px
 
 }
 
 #box1 {
-	background:#868786;
+	background:#041e42;
 	border-radius: 25px;
 	border: 4px solid black;
 }
 
 #box2 {
-	background:#868786;
+	background:#041e42;
 	border-radius: 25px;
 	border: 4px solid black;
 }
 
 #box3 {
-	background:#868786;
+	background:#041e42;
+	border-radius: 25px;
+	border: 4px solid black;
+}
+
+#box4 {
+	background:#041e42;
+	border-radius: 25px;
+	border: 4px solid black;
+}
+
+#box5 {
+	background:#041e42;
+	border-radius: 25px;
+	border: 4px solid black;
+}
+
+#box6 {
+	background:#041e42;
+	border-radius: 25px;
+	border: 4px solid black;
+}
+
+#box7 {
+	background:#041e42;
+	border-radius: 25px;
+	border: 4px solid black;
+}
+
+#box8 {
+	background:#041e42;
 	border-radius: 25px;
 	border: 4px solid black;
 }
@@ -81,7 +222,7 @@ h2, p  {
 	padding:5px;
 }
 
-#box1 p, #box2 p, #box3 p {
+#box1 p, #box2 p, #box3 p, #box4 p, #box5 p, #box6 p, #box7 p, #box8 p {
 	white-space:pre;
 	font-size:smaller;
 	font-family:monospace;
@@ -93,27 +234,70 @@ h2, p  {
     <title>Rounded Corner Boxes</title>
 </head>
 <body>
+<hr class = "new1">
 <div id="box1">
     <h2 style="color:white" ><center>Inspiring passion and preparing all students to be college ready, future focused and globally aware</center>
     </h2>
 </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <style>
     hr.new1 {
-      border: 1px solid white;
-      border-radius: 5px solid white;
+        border: 2px solid white;
     }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     </style>
 </head>
 <div>
-    <h2 style=" color: white">Admin</h2>
+    <h2 style="color: white; text-align: center; font-size: 40px">Admin</h2>
     <hr class = "new1">
 </div>
 <div id="box2">
-    <h2>Example 2</h2>
+    <h2 style = "color:white"><center>Principal</center></h2>
+    <h3 style = "color:white"><center>Brian Schultz</center></h3>
+    <img src="/static/person image.png">
+    <h4 style = "color:white"><center>Email: bschultz@powayusd.com</center></h4>
 </div>
 <div id="box3">
-    <h2>Example3</h2>
+    <h2 style = "color:white"><center>Assistant Principal</center></h2>
+    <h3 style = "color:white"><center>Mike Giaime</center></h3>
+    <img src="/static/person image.png">
+    <h4 style = "color:white"><center>Email: mgiaime@powayusd.com</center></h4>
+</div>
+<div id="box4">
+    <h2 style = "color:white"><center>Assistant Principal</center></h2>
+    <h3 style = "color:white"><center>Ty Eveleth</center></h3>
+    <img src="/static/person image.png">
+    <h4 style = "color:white"><center>Email: teveleth@powayusd.com </center></h4>
+</div>
+<div id="box5">
+    <h2 style = "color:white"><center>Assistant Principal</center></h2>
+    <h3 style = "color:white"><center>Priscilla Sanchez</center></h3>
+    <img src="/static/person image.png">
+    <h4 style = "color:white"><center>Email: prsanchez@powayusd.com</center></h4>
+</div>
+<div id="box6">
+    <h2 style = "color:white"><center>Admin Assistant</center></h2>
+    <h3 style = "color:white"><center>Cosette Marolt</center></h3>
+    <img src="/static/person image.png">
+    <h4 style = "color:white"><center>Email: cmarolt@powayusd.com</center></h4>
+</div>
+<div id="box7">
+    <h2 style = "color:white"><center>School Secretary</center></h2>
+    <h3 style = "color:white"><center>Shari Smith</center></h3>
+    <img src="/static/person image.png">
+    <h4 style = "color:white"><center>Email: ssmith@powayusd.com</center></h4>
+</div>
+<div id="box8">
+    <h2 style = "color:white"><center>School Secretary</center></h2>
+    <h3 style = "color:white"><center>Lisa Stuber</center></h3>
+    <img src="/static/person image.png" class="center">
+    <h4 style = "color:white"><center>Email: lstuber@powayusd.com</center></h4>
 </div>
 </body>
 </html>
@@ -152,7 +336,8 @@ h2, p  {
     }
 
     .nav:hover div {
-        width: 3
+        width: 3px
+    }
 
 
 </style>
