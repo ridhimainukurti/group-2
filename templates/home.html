@@ -14,6 +14,7 @@
         .mapImage {
             position: relative;
             display: inline-block; /*Just for example, so this div is the same size as the image */
+            border: 15px solid #041e42
         }
 
         .pin {
@@ -45,20 +46,89 @@
                 left: 590px; /* Move pin2 350px left */
                 top: 110px; /* Move pin2 30px down */
             }
-            
-            
+
+        .hovertext .main_dnhs_page {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            content: " ";
+            position: absolute;
+            top: 100%; /* At the bottom of the tooltip */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+
+        .mainweb-text {
+            position: absolute;
+            left: 340px; /* Move pin1 50px left */
+            top: 335px; /* Move pin1 100px down */
+            color:black;
+            background-color:white;
+        }
+
+        .counseling-text {
+            position: absolute;
+            left: 435px; /* Move pin2 350px left */
+            top: 310px; /* Move pin2 30px down */
+            color:black;
+            background-color:white;
+        }
+
+        .asbroom-text {
+            position: absolute;
+            left: 434px; /* Move pin2 350px left */
+            top: 220px; /* Move pin2 30px down */
+            color:black;
+            background-color:white;
+        }
+
+        .pusdweb-text {
+            position: absolute;
+            left: 610px; /* Move pin2 350px left */
+            top: 362px; /* Move pin2 30px down */
+            color:black;
+            background-color:white;
+        }
+
+        .sports-text {
+            position: absolute;
+            left: 557px; /* Move pin2 350px left */
+            top: 145px; /* Move pin2 30px down */
+            color:black;
+            background-color:white;
+        }
+
+        body{
+            font-family:Gill Sans, Gill Sans MT, Calibri, sans-serif
+        }
     </style>
 </head>
 
     <h1 style="color: white; font-style:Arial">Welcome to the DNHS WASC Home Page!</h1>
 
     <div class="mapImage">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Del_norte_wiki.png" alt="DNHS Map.jpg" width = "950px" usemap="#map" class></a>
-        <a class="pin main_dnhs_page" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Home" target="_blank"><span class="fas fa-map-marker-alt fa-2x"></span></a>
-        <a class="pin counseling" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Counseling/Counseling-Home" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
-        <a class="pin asb_room" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Students/ASB/ASB" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
-        <a class="pin pusd_website" href="https://www.powayusd.com/" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
-        <a class="pin sports" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Athletics/Athletics-Home" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Del_norte_wiki.png" alt="DNHS Map.jpg" width = "950px" usemap="#map"></a>
+            <a class="pin main_dnhs_page" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Home" target="_blank"><span class="fas fa-map-marker-alt fa-2x"></span></a>
+                <h6 class="mainweb-text">Main DNHS Website</h6>
+            <a class="pin counseling" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Counseling/Counseling-Home" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
+                <h6 class="counseling-text">Counseling Website</h6>
+            <a class="pin asb_room" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Students/ASB/ASB" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
+                <h6 class="asbroom-text">ASB Room Website</h6>
+            <a class="pin pusd_website" href="https://www.powayusd.com/" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
+                <h6 class="pusdweb-text">PUSD Website</h6>
+            <a class="pin sports" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Athletics/Athletics-Home" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
+                <h6 class="sports-text">Sports Website</h6>
     </div>
 
     <a href="#" class="nav">
@@ -73,7 +143,7 @@
     <style type="text/css">
 body {
 	margin:10px;
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif
+	font-family:Gill Sans, Gill Sans MT, Calibri, sans-serif
 }
 
 body {
