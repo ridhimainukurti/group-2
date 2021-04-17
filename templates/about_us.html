@@ -4,24 +4,103 @@
     <meta charset="UTF-8">
     <title>About Us</title>
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding in columns */
+        .row {margin: 0 -5px;}
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the counter cards */
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             max-width: 300px;
+            height: 300px;
             margin: auto;
             text-align: center;
+        }
+
+        /* Responsive columns - one column layout (vertical) on small screens */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
         }
 
         .title {
             color: grey;
             font-size: 18px;
         }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 250px;
+        }
+
     </style>
 </head>
 <body>
-<div class="card">
-    <img src="img.jpg" alt="John" style="width:100%">
-    <h1>John Doe</h1>
-    <p class="title">CEO & Founder, Example</p>
+<h1>About the Website Developers</h1>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="static/sriya.jpg" alt="Sriya" style="width:100%">
+            <h1>Sriya Chilla</h1>
+            <p class="title">Del Norte Student, AP Computer Science Principles</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="sriya.jpg" alt="Sriya" style="width:100%">
+            <h1>Isai Rajaraman</h1>
+            <p class="title">Del Norte Student, AP Computer Science Principles</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="static/ridhima.jpg" alt="Ridhima" style="width:100%">
+            <h1>Ridhima Inukurti</h1>
+            <p class="title">Del Norte Student, AP Computer Science Principles</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="static/grace.jpg" alt="Grace" style="width:100%">
+            <h1>Grace Le</h1>
+            <p class="title">Del Norte Student, AP Computer Science Principles</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="sriya.jpg" alt="Sriya" style="width:100%">
+            <h1>Iniyaa Mohanraj</h1>
+            <p class="title">Del Norte Student, AP Computer Science Principles</p>
+        </div>
+    </div>
 </div>
+
 </body>
 </html>
