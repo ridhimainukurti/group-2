@@ -18,6 +18,11 @@ def about():
     #function use Flask import (Jinja) to render an HTML template
     return render_template("about_us.html")
 
+@app.route('/cal')
+def cal():
+    #function use Flask import (Jinja) to render an HTML template
+    return render_template("cal.html")
+
 if __name__ == "__main__":
     app.run(debug=True, host='127.0.0.1', port='8080')  # main run engine of website
 
