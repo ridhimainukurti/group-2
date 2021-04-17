@@ -34,9 +34,9 @@
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             max-width: 300px;
-            height: 300px;
+            height: 400px;
             margin: auto;
-            text-align: center;
+            background-color: white;
         }
 
         /* Responsive columns - one column layout (vertical) on small screens */
@@ -51,6 +51,7 @@
         .title {
             color: grey;
             font-size: 18px;
+            text-align: center;
         }
 
         img {
@@ -59,22 +60,42 @@
             height: 250px;
         }
 
+
+        body {
+            background: linear-gradient(-45deg, #002654, #02704d, #063d1a, #182874);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
     </style>
 </head>
 <body>
-<h1>About the Website Developers</h1>
+<h1 style="text-decoration-color: white">About the Website Developers</h1>
 
 <div class="row">
     <div class="column">
         <div class="card">
             <img src="static/sriya.jpg" alt="Sriya" style="width:100%">
-            <h1>Sriya Chilla</h1>
+            <h1 style="align-content: center">Sriya Chilla</h1>
             <p class="title">Del Norte Student, AP Computer Science Principles</p>
         </div>
     </div>
     <div class="column">
         <div class="card">
-            <img src="sriya.jpg" alt="Sriya" style="width:100%">
+            <img src="static/isai.jpg" alt="Sriya" style="width:100%">
             <h1>Isai Rajaraman</h1>
             <p class="title">Del Norte Student, AP Computer Science Principles</p>
         </div>
