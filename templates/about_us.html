@@ -2,6 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <head>
+        <nav>
+            <a href="home">Home</a>
+            <a href="about">About US</a>
+            <a href="#">Calendar</a>
+            <div class="animation start-home"></div>
+        </nav> <!-- Navigation bar JavaScript support -->
+
+        <style>
+    nav {
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all 0.5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 180px;
+}
+a:nth-child(2) {
+	width: 220px;
+}
+a:nth-child(3) {
+	width: 180px;
+}
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+	width: 180px;
+	left: 0;
+	background-color: #002654;
+}
+nav .start-about,
+a:nth-child(2):hover ~ .animation {
+	width: 180px;
+	left: 200px;
+	background-color: #063d1a;
+}
+nav .start-calendar,
+a:nth-child(3):hover ~ .animation {
+	width: 200px;
+	left: 400px;
+	background-color: #002654;
+}
+
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+	background: #2c3e50;
+}
+</style>
+    </head>
     <title>About Us</title>
     <style>
 
@@ -124,4 +199,5 @@
 </div>
 
 </body>
+
 </html>
