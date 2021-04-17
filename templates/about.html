@@ -4,24 +4,124 @@
     <meta charset="UTF-8">
     <title>About Us</title>
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding in columns */
+        .row {margin: 0 -5px;}
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the counter cards */
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             max-width: 300px;
+            height: 400px;
             margin: auto;
-            text-align: center;
+            background-color: white;
+        }
+
+        /* Responsive columns - one column layout (vertical) on small screens */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
         }
 
         .title {
             color: grey;
             font-size: 18px;
+            text-align: center;
         }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 250px;
+        }
+
+
+        body {
+            background: linear-gradient(-45deg, #002654, #02704d, #063d1a, #182874);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
     </style>
 </head>
 <body>
-<div class="card">
-    <img src="img.jpg" alt="John" style="width:100%">
-    <h1>John Doe</h1>
-    <p class="title">CEO & Founder, Example</p>
+<h1 style="color: white; text-align: center">About the Website Developers</h1>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="static/sriya1.jpg" alt="Sriya" style="width:100%">
+            <h1 style="text-align: center">Sriya Chilla</h1>
+            <p class="title">Del Norte Student, AP Computer Science Principles</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="static/isai.jpg" alt="Sriya" style="width:100%">
+            <h1  style="text-align: center">Isai Rajaraman</h1>
+            <p class="title">Del Norte Student, AP Computer Science Principles</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="static/ridhima.jpg" alt="Ridhima" style="width:100%">
+            <h1 style="text-align: center">Ridhima Inukurti</h1>
+            <p class="title">Del Norte Student, AP Computer Science Principles</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="static/grace.jpg" alt="Grace" style="width:100%">
+            <h1 style="text-align: center">Grace Le</h1>
+            <p class="title">Del Norte Student, AP Computer Science Principles</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="sriya.jpg" alt="Sriya" style="width:100%">
+            <h1 style="text-align: center">Iniyaa Mohanraj</h1>
+            <p class="title">Del Norte Student, AP Computer Science Principles</p>
+        </div>
+    </div>
 </div>
+
 </body>
 </html>
