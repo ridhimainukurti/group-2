@@ -89,13 +89,15 @@ a:nth-child(3):hover ~ .animation {
         var calendarEl = document.getElementById('calendar');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
+            slotEventOverlap: "false",
+            initialView: 'dayGridWeek',
             textColor:"white",
             eventDisplay:"block",
             dayMaxEvents: true,
             headerToolbar: {
                 left: 'prev,next',
                 center: 'title',
-                right: 'dayGridMonth,timeGridWeek,listWeek'
+                right: 'dayGridWeek,listWeek'
             },
 
             eventDidMount: function(info) {
