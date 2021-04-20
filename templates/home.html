@@ -86,10 +86,14 @@ body {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
     <title>Home</title>
     <style>
+        .div1 {
+            padding-top: 60px;
+        }
         .mapImage {
             position: relative;
             display: inline-block; /*Just for example, so this div is the same size as the image */
             border: 15px solid #041e42;
+            margin-top: 100px;
         }
 
         .pin {
@@ -165,7 +169,7 @@ body {
             font-weight: bold;
         }
 
-        .column {
+        .column1 {
             position: absolute;
 	        left: 1020px;
 	        top: 350px;
@@ -196,6 +200,59 @@ body {
         body{
             font-family:Gill Sans, Gill Sans MT, Calibri, sans-serif
         }
+
+        body1{
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table{
+            position: absolute;
+            left: 80%;
+            top: 32%;
+            transform: translate(-50%, 50%);
+            border-collapse: collapse;
+            width: 400px;
+            height: 200px;
+            border: 1px solid #bdc3cf;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        tr{
+            transition: all 0.2s ease-in;
+            cursor: pointer;
+        }
+
+        th,
+        td{
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #header{
+            background-color: #16a085;
+        }
+
+        h1{
+            font-weight: 600;
+            text-align: center;
+            color: #fff;
+            padding: 10px 0px;
+        }
+
+        tr:hover{
+            background-color: #f5f5f5;
+            transform: scale(1.02);
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media only screen and (max-width: 768px) {
+            table{
+                width: 90%;
+            }
+        }
     </style>
 
 
@@ -205,39 +262,63 @@ body {
     <h2 style="color: white; font-size: 21px; text-align: center; margin-top: -20px; font-style:Arial">Master Zoom Meeting: <a href="https://powayusd.zoom.us/j/95845028884?pwd=TXI2SkZObEtnNnhkU3FIcHpNL21Mdz09#success" target="_blank">Link</a></h2>
     <h3 style="color: white; font-size: 21px; text-align: center; margin-top: -20px; font-style:Arial">WASC Report: <a href="https://docs.google.com/document/d/1W9MlRBSakMAMam565ILG9VuWNtCkm3E-UUl-2TIF6OI/edit?usp=sharing" target="_blank">Link</a></h3>
     <iframe width="450" height="300" src="https://www.youtube.com/embed/2WQNKEuq9WM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="column">
-        <h3 style="color: white">WASC LINK:</h3>
-        <h5 style="color: white">Focus Group Zoom Meeting (2:30 - 3:30) Monday/Tuesday:</h5>
-        <h6 style="color: white">- Group A:<a href="https://powayusd.zoom.us/j/99864664585?pwd=a2dqTlRUanB0ZmJXZmowNjdRUGE5dz09"> Link</a>  (ID: 998 6466 4585 /PW: TeamADN )</h6><br>
-        <h7 style="color: white">- Group B:<a href="https://powayusd.zoom.us/j/99563159754?pwd=R2JhSTZIRWtNYVNEcjRyL2xnRGtlUT09"> Link</a>   (ID: 995 6315 9754 /PW: TeamBDN )</h7><br>
-        <h8 style="color: white">- Group C:<a href="https://powayusd.zoom.us/j/96771014572?pwd=MCtYT29ZQ1ltOW1leHN0Z05memRyZz09"> Link</a>  (ID: 967 7101 4572 /PW: TeamCDN )</h8><br>
-        <h9 style="color: white">- Group D:<a href="https://powayusd.zoom.us/j/96325233595?pwd=anBuazZUQ0xJMUdzcTdQMGlqZkpmdz09"> Link</a>   (ID: 963 2523 3595 /PW: TeamDDN)</h9><br>
-        <h10 style="color: white">- Group E:<a href="https://powayusd.zoom.us/j/91982835666?pwd=U1RPckQ1VTcycElidEQyeGdIOG5Hdz09"> Link</a>  (ID:  919 8283 5666 /PW: TeamEDN )</h10><br>
-    </div>
+    <body1>
+    <table>
+        <tr id="header">
+            <th>WASC Report</th>
+            <th>Main Zoom Link</th>
+            <th>Monday Zoom Links</th>
+            <th>Tuesday Zoom Links</th>
+        </tr>
 
-    <div class="mapImage">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Del_norte_wiki.png" alt="DNHS Map.jpg" width = "950px" usemap="#map"></a>
+        <tr>
+            <td> <h10>WASC Report: <a href="https://docs.google.com/document/d/1W9MlRBSakMAMam565ILG9VuWNtCkm3E-UUl-2TIF6OI/edit?usp=sharing" target="_blank">Link</a></h10></td>
+            <td> <h11>Master Zoom Meeting: <a href="https://powayusd.zoom.us/j/95845028884?pwd=TXI2SkZObEtnNnhkU3FIcHpNL21Mdz09#success" target="_blank">Link</a></h11></td>
+            <td> <h12>Group A:<a href="https://powayusd.zoom.us/j/99864664585?pwd=a2dqTlRUanB0ZmJXZmowNjdRUGE5dz09"> Link</a>  (ID: 998 6466 4585 /PW: TeamADN )</h12></td>
+            <td> <h13>Group D:<a href="https://powayusd.zoom.us/j/96325233595?pwd=anBuazZUQ0xJMUdzcTdQMGlqZkpmdz09"> Link</a>   (ID: 963 2523 3595 /PW: TeamDDN)</h13></td>
+        </tr>
+
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> <h14>Group B:<a href="https://powayusd.zoom.us/j/99563159754?pwd=R2JhSTZIRWtNYVNEcjRyL2xnRGtlUT09"> Link</a>   (ID: 995 6315 9754 /PW: TeamBDN )</h14></td>
+            <td> <h15>Group E:<a href="https://powayusd.zoom.us/j/91982835666?pwd=U1RPckQ1VTcycElidEQyeGdIOG5Hdz09"> Link</a>  (ID:  919 8283 5666 /PW: TeamEDN )</h15></td>
+        </tr>
+
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> <h14>Group C:<a href="https://powayusd.zoom.us/j/96771014572?pwd=MCtYT29ZQ1ltOW1leHN0Z05memRyZz09"> Link</a>  (ID: 967 7101 4572 /PW: TeamCDN )</h14></td>
+            <td> </td>
+        </tr>
+    </table>
+    </body1>
+
+    <div1>
+        <div class="mapImage">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Del_norte_wiki.png" alt="DNHS Map.jpg" width = "950px" usemap="#map"></a>
             <a class="pin main_dnhs_page" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Home" target="_blank"><span class="fas fa-map-marker-alt fa-2x"></span></a>
-                <div class="text-box maindnhsbox">
-                    <h4>Main DNHS Website</h4>
-                </div>
+            <div class="text-box maindnhsbox">
+                <h4>Main DNHS Website</h4>
+            </div>
             <a class="pin counseling" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Counseling/Counseling-Home" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
-                <div class="text-box counselingbox">
-                    <h4>Counseling Website</h4>
-                </div>
+            <div class="text-box counselingbox">
+                <h4>Counseling Website</h4>
+            </div>
             <a class="pin asb_room" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Students/ASB/ASB" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
-                <div class="text-box asbroombox">
-                    <h4>ASB Room Website</h4>
-                </div>
+            <div class="text-box asbroombox">
+                <h4>ASB Room Website</h4>
+            </div>
             <a class="pin pusd_website" href="https://www.powayusd.com/" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
-                <div class="text-box pusdbox">
-                    <h4>PUSD Website</h4>
-                </div>
+            <div class="text-box pusdbox">
+                <h4>PUSD Website</h4>
+            </div>
             <a class="pin sports" href="https://www.powayusd.com/en-US/Schools/HS/DNHS/Athletics/Athletics-Home" target="_blank"><span class="fas fa-map-marker fa-2x"></span></a>
-                <div class="text-box sportsweb">
-                    <h4>Sports Website</h4>
-                </div>
-    </div>
+            <div class="text-box sportsweb">
+                <h4>Sports Website</h4>
+            </div>
+        </div>
+    </div1>
 
     <a href="#" class="nav">
         <div class="one"></div>
@@ -279,7 +360,7 @@ body {
 iframe {
 	        position: absolute;
 	        left: 1020px;
-	        top: 550px;
+	        top: 730px;
 }
 
 #box1{
