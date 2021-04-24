@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block meta %}
+<title>WASC Home Page</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Intro to Page -->
+    <div class="row">
+        <div class="col-md-12" >
+            <h1 style="color: white; text-align: center; font-size: 50px; font-family:Arial">Welcome to the DNHS WASC Home Page!</h1>
+            <h2 style="color: white; text-align: center; background:#041e42; border-radius: 25px; border: 4px solid black;">Inspiring passion and preparing all students to be college ready, future focused and globally aware</h2>
+        </div>
+    </div>
+    <!-- Image Map, Meetings, Video -->
+    <div class="row">
+        <!-- Image Map, 8 of 12 on column grid -->
+        <div class="col-md-8">
+            <div class="mapImage">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Del_norte_wiki.png" alt="DNHS Map.jpg" usemap="#map"></a>
+            </div>
+        </div>
+        <!-- Table and Video are stacked, 4 of 12 on column grid -->
+        <div class="col-md-4">
+            <div class="row">
+                <!-- Table -->
+                <div class="col">
+                    <table>
+                        <!-- WASC headers -->
+                        <tr id="wasc_th">
+                            <th>WASC Report</th>
+                            <th>Main Zoom Link</th>
+                            <th>Monday Zoom Links</th>
+                            <th>Tuesday Zoom Links</th>
+                        </tr>
+                        <!-- WASC links -->
+                        <tr id="wasc_td1">
+                            <td> WASC Report: <a href="https://docs.google.com/document/d/1W9MlRBSakMAMam565ILG9VuWNtCkm3E-UUl-2TIF6OI/edit?usp=sharing" target="_blank">Link</a></td>
+                            <td> Master Zoom Meeting: <a href="https://powayusd.zoom.us/j/95845028884?pwd=TXI2SkZObEtnNnhkU3FIcHpNL21Mdz09#success" target="_blank">Link</a></td>
+                            <td> Group A:<a href="https://powayusd.zoom.us/j/99864664585?pwd=a2dqTlRUanB0ZmJXZmowNjdRUGE5dz09"> Link</a>  (ID: 998 6466 4585 /PW: TeamADN )</td>
+                            <td> Group D:<a href="https://powayusd.zoom.us/j/96325233595?pwd=anBuazZUQ0xJMUdzcTdQMGlqZkpmdz09"> Link</a>   (ID: 963 2523 3595 /PW: TeamDDN)</td>
+                        </tr>
+                        <tr id="wasc_td2">
+                            <td> </td>
+                            <td>Master Visitation Link: <a href="https://docs.google.com/spreadsheets/d/1aideV2KtCmJBz26qZ0tMWx1oxUfhznzqc6PmtE_wfX4/edit?usp=sharing"> Link</a></td>
+                            <td>Group B:<a href="https://powayusd.zoom.us/j/99563159754?pwd=R2JhSTZIRWtNYVNEcjRyL2xnRGtlUT09"> Link</a>   (ID: 995 6315 9754 /PW: TeamBDN )</td>
+                            <td>Group E:<a href="https://powayusd.zoom.us/j/91982835666?pwd=U1RPckQ1VTcycElidEQyeGdIOG5Hdz09"> Link</a>  (ID:  919 8283 5666 /PW: TeamEDN )</td>
+                        </tr>
+                        <tr id="wasc_td3">
+                            <td> </td>
+                            <td> </td>
+                            <td>Group C:<a href="https://powayusd.zoom.us/j/96771014572?pwd=MCtYT29ZQ1ltOW1leHN0Z05memRyZz09"> Link</a>  (ID: 967 7101 4572 /PW: TeamCDN )</td>
+                            <td> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Video -->
+                <div class="col">
+                    <iframe src="https://www.youtube.com/embed/2WQNKEuq9WM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block style %}
+<style>
+
+    <!-- Table CSS -->
+    table {
+        color: #ecf0f1;
+        border: 3px solid #bdc3cf;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    td, th {
+        border: 3px solid #bdc3cf;
+        text-align: left;
+        padding: 8px;
+    }
+    #wasc_th{
+        color: #ecf0f1;
+        background-color: #1461de;
+    }
+    #wasc_td1, #wasc_td2, #wasc_td3{
+        color: #ecf0f1;
+        background-color: #2c3e50;
+    }
+</style>
+{% endblock %}
+
+</html>
+
+

@@ -13,6 +13,12 @@ def home():
     #function use Flask import (Jinja) to render an HTML template
     return render_template("home.html")
 
+@app.route('/home2')
+def home2():
+    #function use Flask import (Jinja) to render an HTML template
+    return render_template("home2.html")
+
+
 @app.route('/about')
 def about():
     #function use Flask import (Jinja) to render an HTML template
